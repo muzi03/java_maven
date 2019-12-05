@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 参数化测试-xml文件参数化 配置 -->
+
+<suite name="parameter">
+<test name="param">
+<classes>
+<parameter name="name" value="linda"/>
+<parameter name="age" value="12" />
+<class name="com.course.testNg.paramter.ParamterTest"/>
+</classes>
+</test>
+</suite>

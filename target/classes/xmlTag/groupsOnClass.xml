@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 组测试中的类分组测试 的配置-->
+
+<suite name="suite">
+<test name="groups">
+<classes>
+<class name="com.course.testNg.groups.GroupsOnClass1"/>
+<class name="com.course.testNg.groups.GroupsOnClass2"/>
+<class name="com.course.testNg.groups.GroupsOnClass3"/>
+</classes>
+</test>
+
+<test name="onlyRunStu">
+<!-- groups标签，使用include标签指定运行某个测试用例 -->
+<groups>
+<run>
+<include name="stu"/><!-- name必须是test注解定义的名字，否则运行无效 -->
+</run>
+</groups>
+<classes>
+<class name="com.course.testNg.groups.GroupsOnClass1"/>
+<class name="com.course.testNg.groups.GroupsOnClass2"/>
+<class name="com.course.testNg.groups.GroupsOnClass3"/>
+</classes>
+</test>
+
+</suite>
