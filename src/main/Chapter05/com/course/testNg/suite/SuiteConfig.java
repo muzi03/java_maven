@@ -1,5 +1,7 @@
 package com.course.testNg.suite;
-
+/**
+ * 
+ */
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -23,5 +25,4 @@ public class SuiteConfig {
 	public void afterTest() {
 		System.out.println( "After Test running!");
 	}
-
 }
