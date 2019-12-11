@@ -6,3 +6,5 @@ mock测试：就是在测试过程中，对于某些不容易构造或者不容�
 moco的启动命令（java文件）：
 java -jar ./moco-runner-0.11.0-standalone.jar http -p 8099 -c startup1.json
 java -jar ./moco-runner-0.11.0-standalone.jar http -p 8099 -c startupGet.json
+
+在创建post和get请求时，需要注意传参：queries 用于get请求是传参     forms  用于post请求传参

@@ -1,0 +1,19 @@
+[
+{
+"description":"获取用户卡号信息",
+"request":{
+"uri":"/get/user/card/info",
+"method":"get",
+"queries":{
+"user_id":"1"
+}
+},
+"response":{
+"status":200,
+"json":{
+"card_no":"2392 0029 27",
+"rest_amount":"259.63元"
+}
+}
+}
+]
