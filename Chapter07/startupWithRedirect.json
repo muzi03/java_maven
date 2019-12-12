@@ -18,6 +18,8 @@
 "request":{
 "uri":"/redirect/new"
 },
-"response":"重定向成功啦"
+"response":{
+"text":"重定向成功啦"
+}
 }
 ]

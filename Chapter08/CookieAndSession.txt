@@ -1,0 +1,18 @@
+cookie 和 session 的区别
+1、cookie在客户端的头信息中（request header）
+
+2、session在服务端存储，文件、数据库等都可以（会采用缓存数据库来存储，如：redis）
+
+3、一般来说，session的验证需要cookie带一个字段来表示这个用户是哪一个session
+
+4、一般来说session的验证需要cookie带一个字段来表示这个用户是哪一个session，
+      所以当客户端禁用cookie时，session也将失效
+      
+      
+      
+Cookie  总结
+1、cookie就是一小段文本信息
+
+2、cookie的格式为key：value;key:value
+
+3、cookie的值由服务端生成，客户端保存
