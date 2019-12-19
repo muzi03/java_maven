@@ -7,23 +7,28 @@
     <artifactId>Chapter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>Chapter09</artifactId>
-  <name>Chapter09</name>
+  <artifactId>Chapter10</artifactId>
+  <name>Chapter10</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <swagger.version>2.6.1</swagger.version>
   </properties>
-<dependencies>
- <dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpclient</artifactId>
-        <version>4.3.5</version>
-    </dependency>
-    
+  <dependencies>
     <dependency>
-    <groupId>org.json</groupId>
-    <artifactId>json</artifactId>
-    <version>20170516</version>
+	<groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    <version>2.0.0.RELEASE</version>
     </dependency>
-</dependencies>
+    <dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    <version>${swagger.version}</version>
+    </dependency>
+    <dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>${swagger.version}</version>
+    </dependency>
+  </dependencies>
 </project>

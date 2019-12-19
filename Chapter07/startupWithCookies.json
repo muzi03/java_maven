@@ -26,9 +26,10 @@
 }
 },
 {
-"description":"这是一个带cookies的post请求",
+"description":"这是一个带cookies信息的post请求",
 "request":{
 "uri":"/post/with/cookies",
+
 "method":"post",
 "cookies":{
 "login":"true"
@@ -41,9 +42,9 @@
 "response":{
 "status":200,
 "json":{
-"Lisa":"success",
+"lisa":"success",
 "status":"1"
 }
 }
 }
-]
+]	
