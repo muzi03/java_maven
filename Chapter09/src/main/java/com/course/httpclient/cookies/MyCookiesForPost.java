@@ -78,11 +78,11 @@ public class MyCookiesForPost {
 		System.out.println(param);
 		
 		//设置请求头信息,设置header信息
-		post.setHeader("content-type","application/json;charset=UTF-8");
+		post.setHeader("content-type","application/json");
 		
 		//将参数信息添加到方法中	
-		StringEntity entity = new StringEntity(param.toString());
-		entity.setContentType(ContentType.APPLICATION_JSON.toString());
+		StringEntity entity = new StringEntity(param.toString(),"utf-8");
+//		entity.setContentType(ContentType.APPLICATION_JSON.toString());
 		post.setEntity(entity);
 
 		//声明一个对象来进行响应结果的存储
@@ -101,7 +101,7 @@ public class MyCookiesForPost {
 		JSONObject resultjson = new JSONObject(results);
 		
 		//2、获取到结果值
-		String success = (String) resultjson.get("Lisa");
+		String success = (String) resultjson.get("lisa");
 		String status = (String) resultjson.get("status");
 		
 		//3、具体的判断返回结果的值

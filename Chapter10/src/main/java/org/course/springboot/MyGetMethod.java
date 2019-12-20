@@ -14,7 +14,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+//import io.swagger.annotations.Api;
+
 @RestController
+//@Api(value="/",produces="这是我全部的get方法")
 public class MyGetMethod {
 	@RequestMapping(value="/getCookies",method=RequestMethod.GET)
 	public String getCookies(HttpServletResponse response) {
