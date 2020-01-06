@@ -14,10 +14,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-//import io.swagger.annotations.Api;
+import io.swagger.annotations.Api;
+
+import io.swagger.annotations.Api;
 
 @RestController
-//@Api(value="/",produces="这是我全部的get方法")
+@Api(value="/",produces="这是我全部的get方法")
 public class MyGetMethod {
 	@RequestMapping(value="/getCookies",method=RequestMethod.GET)
 	public String getCookies(HttpServletResponse response) {
@@ -68,7 +70,7 @@ public class MyGetMethod {
 	 * 第二种实现方式：url:ip:port/get/with/param/10/20
 	 * 模拟获取商品列表
 	 */
-	@RequestMapping(value="/get/with/param/{start}/{end}")
+	@RequestMapping(value="/get/with/param/{start}/{end}",method= RequestMethod.GET)
 	public Map<String, Integer> getgoodsList1(@PathVariable Integer start,
 			@PathVariable Integer end) {
 		Map<String, Integer> goodslist = new HashMap<>();
